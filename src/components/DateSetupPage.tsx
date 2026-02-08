@@ -18,24 +18,24 @@ interface OptionItem {
 }
 
 const foodOptions: OptionItem[] = [
-  { id: "Italian", label: "Italian", emoji: "🍝" },
-  { id: "Sushi", label: "Sushi", emoji: "🍣" },
-  { id: "Steak", label: "Steak", emoji: "🥩" },
-  { id: "Dessert", label: "Dessert", emoji: "🍰" },
+  { id: "Fries", label: "Fries", emoji: "🍟" },
+  { id: "Jollibee", label: "Jollibee", emoji: "🐝" },
+  { id: "Mcdo", label: "Mcdo", emoji: "🍔" },
+  { id: "Dessert", label: "Dessert or Pastries", emoji: "🍰" },
 ];
 
 const drinkOptions: OptionItem[] = [
-  { id: "Wine", label: "Wine", emoji: "🍷" },
-  { id: "Bubble Tea", label: "Boba", emoji: "🧋" },
-  { id: "Cocktails", label: "Cocktails", emoji: "🍸" },
+  { id: "Soju", label: "Soju", emoji: "🍾" },
+  { id: "Coco", label: "Coco", emoji: "🧋" },
+  { id: "Softdrinks", label: "Softdrinks", emoji: "🥤" },
   { id: "Coffee", label: "Coffee", emoji: "☕" },
 ];
 
 const movieOptions: OptionItem[] = [
-  { id: "RomCom", label: "RomCom", emoji: "💕" },
-  { id: "Horror", label: "Horror", emoji: "👻" },
-  { id: "Action", label: "Action", emoji: "💥" },
-  { id: "Anime", label: "Anime", emoji: "🌸" },
+  { id: "PJO", label: "Percy Jackson Series", emoji: "🔱" },
+  { id: "Bridgerton", label: "Bridgerton", emoji: "🏰" },
+  { id: "Pride and Prejudice", label: "Pride and Prejudice", emoji: "💕" },
+  { id: "Your Choice", label: "Your Choice", emoji: "🌸" },
 ];
 
 function SelectionCategory({

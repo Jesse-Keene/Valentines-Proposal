@@ -6,24 +6,24 @@ import { Heart, CalendarHeart, MapPin, Clock } from "lucide-react";
 import { useValentine } from "@/context/ValentineContext";
 
 const foodEmojis: Record<string, string> = {
-  Italian: "🍝",
-  Sushi: "🍣",
-  Steak: "🥩",
-  Dessert: "🍰",
+    Fries: "🍟",
+    Jollibee: "🐝",
+    Mcdo: "🍔",
+    Dessert: "🍰",
 };
 
 const drinkEmojis: Record<string, string> = {
-  Wine: "🍷",
-  "Bubble Tea": "🧋",
-  Cocktails: "🍸",
-  Coffee: "☕",
+    Soju: "🍾",
+    Coco: "🧋",
+    Softdrinks: "🥤",
+    Coffee: "☕",
 };
 
 const movieEmojis: Record<string, string> = {
-  RomCom: "💕",
-  Horror: "👻",
-  Action: "💥",
-  Anime: "🌸",
+    PJO: "🔱",
+    Bridgerton: "🏰",
+    "Pride Prejudice": "💕",
+    "Your Choice": "🌸",
 };
 
 function Barcode() {
@@ -92,7 +92,7 @@ export default function ReceiptPage() {
           <div className="flex items-center gap-1.5">
             <MapPin className="w-3 h-3 text-rose flex-shrink-0" />
             <span className="font-semibold">Where:</span>
-            <span>Wherever you want ❤️</span>
+            <span>On the Screen 🎥</span>
           </div>
         </div>
 
