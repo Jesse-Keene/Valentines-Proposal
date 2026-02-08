@@ -135,8 +135,11 @@ export default function Book() {
     const handleFlip = useCallback(
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (e: any) => {
-            const landedPage = e.data as number;
-            // If we landed on a decorative left page (odd index), instantly jump to the next content page
+            const landedPage = e.data as number;            // Only skip decorative pages in portrait (single-page) mode.
+            // In landscape, the spread already shows [left, content] together.
+            const orientation = bookRef.current?.pageFlip()?.getOrientation();
+            if (orientation !== "portrait") return;
+
             if (landedPage === 1 || landedPage === 3 || landedPage === 5) {
                 bookRef.current?.pageFlip().turnToPage(landedPage + 1);
             }
