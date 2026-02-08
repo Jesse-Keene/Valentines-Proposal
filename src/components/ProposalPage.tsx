@@ -22,7 +22,7 @@ const REJECTION_MESSAGES = [
 ];
 
 export default function ProposalPage() {
-  const { setCurrentPage, setAccepted, setIsFlipping } = useValentine();
+  const { setCurrentPage, setAccepted } = useValentine();
   const [noPosition, setNoPosition] = useState({ x: 0, y: 0 });
   const [noMoved, setNoMoved] = useState(false);
   const [noClickCount, setNoClickCount] = useState(0);
@@ -69,8 +69,7 @@ export default function ProposalPage() {
     confetti({ particleCount: 40, spread: 100, origin: { x: 0.5, y: 0.5 }, colors, shapes: ["circle"], scalar: 1.5 });
 
     setTimeout(() => {
-      setIsFlipping(true);
-      setTimeout(() => { setCurrentPage(2); setIsFlipping(false); }, 100);
+      setCurrentPage(2);
     }, 1800);
   };
 

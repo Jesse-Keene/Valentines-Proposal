@@ -115,18 +115,14 @@ function SelectionCategory({
 }
 
 export default function DateSetupPage() {
-  const { selections, setSelections, setCurrentPage, setIsFlipping } =
+  const { selections, setSelections, setCurrentPage } =
     useValentine();
 
   const allSelected = selections.food && selections.drinks && selections.movie;
 
   const handleSeal = () => {
     if (!allSelected) return;
-    setIsFlipping(true);
-    setTimeout(() => {
-      setCurrentPage(3);
-      setIsFlipping(false);
-    }, 100);
+    setCurrentPage(3);
   };
 
   return (

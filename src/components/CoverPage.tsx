@@ -6,14 +6,10 @@ import { BookOpen, Heart } from "lucide-react";
 import { useValentine } from "@/context/ValentineContext";
 
 export default function CoverPage() {
-  const { setCurrentPage, setIsFlipping } = useValentine();
+  const { setCurrentPage } = useValentine();
 
   const handleOpen = () => {
-    setIsFlipping(true);
-    setTimeout(() => {
-      setCurrentPage(1);
-      setIsFlipping(false);
-    }, 100);
+    setCurrentPage(1);
   };
 
   return (
